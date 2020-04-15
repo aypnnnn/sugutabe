@@ -1,0 +1,853 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'MyYuGothicM';
+	font-weight: bold;
+	src: local('YuGothic-Bold'), local('Yu Gothic');          
+}
+
+html{
+	font-size: 62.5%;/*16px * 62.5%=10px*/
+}
+
+body{
+	color: #181818;
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", "メイリオ", sans-serif;
+	font-size: 1.6rem;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:grayscale;
+	font-feature-settings: palt;
+	letter-spacing: 0,05em;
+}
+
+a{
+	color: #181818;
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+p{
+	font-weight: bold;
+	color: #2e2c2b;
+}
+.text-center{
+	text-align: center;
+}
+.sp-img{
+	display: none;
+}
+.pc-img{
+	text-align: center;
+}
+.btn{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.line{
+	background: linear-gradient(transparent 50%, #f8e018 0%);
+	font-weight: bold; 
+}
+
+.title{
+	margin:30px 0 50px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*--------------------
+ *
+ *header
+ *
+ *--------------------*/
+.header-inner{
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+.btn-trigger{
+    display: none;
+}
+.logo{
+    width: 239px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-title{
+    text-align: center;
+    padding: 2.4em 0 1.8em;
+    margin-right: 60px;
+}
+.nav-title::after{
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #ec4a4a;
+    transition: all 0.5s;
+    
+}
+.nav-title:hover::after{
+    width: 100%;  
+}
+.nav-title:nth-last-of-type(3){
+    margin-right: 66px;
+}
+.nav-title:last-of-type{
+    margin: 0;
+}
+
+.nav-title>a{
+    color: #675749;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+.nav-title .nav-title-sub{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    color: #ec4a4a;
+    padding-bottom: 0.625em;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+/*--------------------
+ *
+ *about
+ *
+ *--------------------*/
+
+.section-about{
+	padding: 4.2em 0;
+	text-align: center;
+}
+.lead-paragraph{
+    font-size: 2.4rem;
+    font-weight: 700;
+	line-height: 1.8;
+	padding-bottom: 2.0em;
+}
+
+
+.btn{
+    text-align: center;
+}
+
+.section-about{
+	position:relative;
+	background-image: url("../image/about/bro.png"),url("../image/about/carotto.png"),url("../image/about/daikon.png"),url(../image/about/onion.png),url(../image/about/tomato.png);
+	background-position: top 50px right 160px,top 450px left -10px,top 75px left 20px,top 200px right -20px,top 400px right -50px;
+	background-repeat: no-repeat;
+}
+
+
+/*--------------------
+ *
+ *選ばれる3つの理由
+ *
+ *--------------------*/
+.section-reason{
+    background-color: #ecdecc;
+    padding: 50px 0;
+}
+.reason-title{
+	margin:30px 0 60px;
+	line-height: 1.5;
+	text-align: center;
+}
+.reason-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.reason-info{
+    display: flex;
+    margin-left: -10px;
+}
+.reason-item{
+    width: 31.8%;
+    padding: 20px 0 37px;
+    margin-left: 23px;
+    text-align: center;
+	background-color:rgba(255,255,255,0.6);
+	position: relative;
+}
+
+.reason-item__logo{
+    margin: 0 auto;
+    padding: 16px; 
+}
+.reason-item__logo.track{
+	margin: 20px 0 38px 0;
+}
+
+.reason-paragraph{
+	text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9;
+    font-weight: bold;
+    font-feature-settings: normal;
+    letter-spacing: normal;
+	width: 80%;
+	margin: auto;
+}
+.reason-titlebox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+.about-number{
+	font-size: 2.6em;
+	font-weight: bold;
+	margin-left: -4px;
+    padding-right: 8px;
+}
+.section-reason{
+	background-image: url(../image/background/reason_background_PC.jpg);
+	background-size: cover;
+}
+
+.icon-title{
+	font-size:1.9rem;
+	line-height: 2.5rem;
+	font-weight: bold; 
+	align-items: flex-start;
+    display: block;
+}
+
+/*--------------------
+ *
+ * trial
+ *
+ *--------------------*/
+
+.trial-section{
+	background-color: #f3e9df;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+.trial-title{
+	display: flex;
+	margin: 0 auto;
+}
+.sub-title{
+	font-size:2.4rem;
+	margin: 30px;
+}
+
+.trial-contents{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	margin: 0 auto;
+}
+.set-info{
+	margin-left: -100px;
+	display: flex;
+}
+.trial-set{
+	margin-left: 100px
+}
+.trial-subtitle{
+	font-size:2.2rem;
+	margin-bottom: 20px;
+}
+.trial-price{
+	margin-bottom: 20px;
+	font-size: 3.2rem;
+	color: #ec4a4a;
+}
+.trial-price_tax{
+	font-size:1.6rem;
+	font-weight: bold;
+}
+.trial-farmer{
+	margin-bottom: 20px;
+}
+.trial-img{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.recomend{
+	text-align: center;
+	margin: 60px 0 60px;
+}
+.about-background{
+	position:relative;
+	background-image: url("../image/about/bro.png"),url("../image/about/carotto.png"),url("../image/about/daikon.png"),url(../image/about/onion.png),url(../image/about/tomato.png);
+	background-position: top 50px right 160px,top 450px left -10px,top 75px left 20px,top 200px right -20px,top 400px right -50px;
+	background-repeat: no-repeat;
+}
+.trial-background{
+	position:relative;
+	background-image: url("../image/trial2/icon_piman.png"),url("../image/trial2/icon_bro.png"),url("../image/trial2/icon_onion.png"),url("../image/trial2/icon_kyabetu.png"),url("../image/trial2/icon_kinoko.png");
+	background-position: top 50px right 120px,top 900px left 20px,top 100px left 20px,top 760px right -60px,top 1100px right 15px;
+	background-repeat: no-repeat;
+}
+
+/*--------------------
+ *
+ * farmer
+ *
+ *--------------------*/
+.farmers{
+	padding: 40px 100px;
+}
+.sub-title{
+	text-align: center;
+}
+.farmers-contents-a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 80px;
+}
+
+.farmers-contents-b{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.farmers-text-area-a{
+	line-height: 2em;
+	width: 27vw;
+	padding-right: 4%;
+	margin: 0;
+}
+
+.farmers-text-area-b{
+	line-height: 2em;
+	width: 27vw;
+	padding-left: 4%;
+	margin: 0;
+}
+.farmers-number{
+	margin: 0;
+	padding-bottom: 30px;
+}
+.farmers-subhead{
+	font-size: 2.0rem;
+	margin-bottom: 30px;	
+	font-weight: bold;
+}
+.farmers-text{
+	margin: 0;
+}
+
+.farmers-image{
+	width: 40vw;
+}
+.about-farmers{
+	color: #ec4a4a;
+}
+
+/*--------------------
+ *
+ * quality
+ *
+ *--------------------*/
+.quality-section{
+	padding: 50px 80px 100px;
+}
+
+.quality-section .title{
+	margin-bottom: 40px;
+}
+
+.quality-paragraph{
+	width: 780px;
+	margin: 0 auto;
+	font-size:1.8rem;
+	line-height: 2;
+}
+.quality-innner{
+    box-sizing: border-box;
+    width : calc(100% - 80px) ;
+    margin: auto;
+	padding: 60px 20px;
+	border: solid 4px #f9a7a7;   	/* 内側の線になる一本線の枠線をひく*/
+	outline: solid 8px #f9a7a7;   /* 外側の線になる5pxの一本線の枠線をひく*/
+	outline-offset: 10px;        /* 内側の線になる一本線の枠線をひく*/
+}
+
+
+/*--------------------
+ *
+ * よくある質問
+ *
+ *--------------------*/
+.faq-section{
+	background-color: #f3dddd;
+	padding: 40px 120px 70px;
+}
+
+.question-contents{
+	display: flex;
+	align-items: flex-start;
+	padding: 14px 0 14px 20px;
+}
+.q-icon{
+	margin-right: 15px;
+}
+
+.question-subhead{
+	width: 780px;
+	font-size: 2.0rem;
+	margin-top: 10px;
+	border-bottom: dotted 5px #f9a7a7;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.answer-subhead{
+	display: flex;
+	align-items: flex-start;
+	padding: 14px 0 14px 20px;
+}
+
+.a-icon{
+	margin-right: 14px;
+}
+
+.answer-sub-text{
+	font-size: 2.0rem;
+	color: #ec4a4a;
+	margin-top: 12px;
+}
+
+.faq-text{
+	display: flex;
+	align-items: flex-start;
+	padding-left: 82px;
+	line-height: 1.5;
+}
+.faq-white{
+	background-color: #fff;
+	padding: 15px 34px 40px 10px;
+}
+
+.white-1{
+	margin-bottom: 40px;
+}
+/*--------------------
+ *
+ * footer
+ *
+ *--------------------*/
+.footer{
+	background-color: #635045;
+	padding:77px 0 25px;
+}
+
+.copyright{
+	font-size:1.2rem;
+	color:#FFFFFF;
+}
+
+@media screen and (max-width:768px){
+    body{
+        font-size: 1.4rem;
+        font-size: 3.2vw;
+    }
+	.title{
+        width: 60.6%;
+        margin: 1.6em auto;
+	}
+	.btn{
+        width: 70.6%;
+        margin: 20px auto;
+    }
+	.pc-img{
+        display: none;
+    }
+    .sp-img{
+        display: block;
+	}
+/*-----------------------
+* header
+-------------------------*/		
+	.header-nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+        width: 100%;
+        z-index: 50;
+		background-color: #fff;
+	}
+    .header-inner{
+        box-sizing: border-box;
+        display: block;
+        padding: 13.5px 20px 13.5px 14.5px;
+        margin: 0;
+    }
+    .logo{
+        width: 96px;
+    }
+	.btn-trigger{
+		display: block;
+		-webkit-apperance: none;
+		appearance: none;
+		position: fixed;
+		top: 18px;
+		right: 20px;
+		z-index: 150;
+		width: 36px;
+		height: 20.5px;
+		border: none;
+		background-color: transparent;
+		outline: none;
+	}
+	.btn-trigger span{
+		position: absolute;
+		display: block;
+		width: 24px;
+		height: 3px;
+		background-color: #444444;
+		transition: all 0.5s;
+	}
+	.btn-trigger span:first-of-type{
+		top: 0;
+
+	}
+	.btn-trigger span:nth-of-type(2){
+		top: 9px;
+
+	}
+	.btn-trigger span:last-of-type{
+		bottom: 0;
+
+	}
+	.btn-trigger.active span:first-of-type{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.btn-trigger.active span:nth-of-type(2){
+		opacity: 0;
+	}
+	.btn-trigger.active span:last-of-type{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.nav-list{
+		display: block;
+	}
+	.navigation{
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 165px 0 0;
+		z-index: 100;
+		width: 100%;
+		height: 120%;
+		transform: translateX(100%);
+		background-color: #f6f0e8;
+		transition: all 0.8s;
+	}
+	.navigation.slide-left{
+		transform: translateX(0);
+		transition: all 1s
+	}
+	.nav-info{
+		padding: 1.95em 0  1.95em;
+		margin-right: 0px;
+	}
+	.nav-info::after{
+		display: none;
+
+	}
+	.nav-info:nth-last-of-type(3) {
+		margin-right: 0px;
+	}
+	.nav-info>a{
+		font-size: 6.4vw;
+		color: #444444;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	.nav-info:first-of-type>a{
+		opacity: 0.5;
+	}
+	.nav-info .nav-info__ja{
+		display: none;
+	}
+	
+    .hero-image{
+		margin-top: 55px;
+    }
+/*---------------------------
+* lead
+-----------------------------*/
+    .section-about{
+        padding: 1.8em 1.8em;
+        text-align: left;
+		background-image: none;
+    }
+
+    .lead-paragraph {
+        font-size: 1.6rem;
+		line-height: 1.5;
+		padding: 1.0em 1.2em;
+    }
+    
+	br{
+		display: none;
+	}
+	
+/*--------------------------
+* reason
+---------------------------*/
+    .section-reason{
+        padding: 40px 0 50px;
+    }
+	.reason-title{
+        width: 33.2%;
+		margin-bottom: 12.5px;
+	}
+    .reason{
+        margin-bottom: 40px;
+    }
+    .reason-wrapper{
+        padding: 0 5.3%;
+    }
+    .reason-info{
+        display: block;
+        margin: 0;
+    }
+    .reason-item{
+        width: 100%;
+        padding: 20px 0 37px;
+        margin: 0 0 30px;
+        text-align: center;
+	}
+    .reason-title{
+        width: 80%;
+        margin: 2.0em auto;
+	}
+
+    .reason-paragraph {
+		font-size: 0.9em;
+		line-height: 1.5em;
+        font-weight: bold;
+        padding: 0 1.14em;
+        text-align: left;
+	}
+
+	.section-reason{
+		background-image: url(../image/background/reason_background_SP.jpg);
+		background-size: cover;
+	}
+/*-----------------------
+* set
+-------------------------*/
+    .trial-section{
+        padding: 40px 0 50px;
+		background: none;
+		background-color: #f3e9df;
+    }
+	.trial-section:last-of-type{
+		background-color: #fff;
+	}
+    .trial-contents{
+     padding: 0 5.3%;
+    }
+    .set-info{
+        display: block;
+        margin: 0;
+    }
+    .trial-set{
+        width: 100%;
+        font-size: 1.4rem;
+        font-size: 3.7vw;
+        padding-bottom: 38px;
+        margin: 0;
+    }
+    .trial-set:last-of-type{
+        padding-bottom: 30px;
+    }
+    .trial-img{
+        margin-bottom: 25px;
+		width: 75vw;
+    }
+ 
+    .trial-subtitle{
+        font-size: 1.0rem;
+        font-size: 3.4vw;
+        margin-bottom: 0.95em;
+    }
+    .trial-price{
+		font-size: 5.2vw;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    .trial-price_tax{
+        font-size: 0.8rem;
+        font-size: 2.9vw;
+    }	
+	.recomend{
+		width: 48%;
+		margin: 0 auto;
+	}
+	
+/*--------------------
+ *
+ * farmers
+ *
+ *--------------------*/
+.farmers{
+	padding: 20px 50px;
+}
+.sub-title{
+	font-size: 1.8rem;
+    font-weight: bold;
+	text-align: center;
+}
+	
+.farmers-contents-a{
+	flex-direction: column;
+	line-height: 1.6em;
+    margin: 0 auto;
+    padding-bottom: 2.8em;
+}
+
+.farmers-contents-b{
+	flex-direction: column;
+	line-height: 1.6em;
+    margin: 0 auto;
+    width: 75vw;
+    padding-bottom: 2.8em;
+}
+
+.farmers-text-area-a{
+	line-height: 2em;
+	width: 70vw;
+	margin: 0;
+	padding: 0;
+}
+.farmers-paragraph{
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+	line-height: 1.5em;
+}
+.farmers-text-area-b{
+	line-height: 2em;
+	width: 70vw;
+	margin: 0;
+}
+.farmers-number{
+	margin: 0;
+	padding-bottom: 30px;
+}
+.farmers-subhead{
+	font-size: 1.6rem;	
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.farmers-image{
+	width: 70vw;
+}
+
+/*--------------------
+ *
+ * quality
+ *
+ *--------------------*/
+.quality-section{
+	padding: 10px 40px 50px;
+}
+
+.quality-paragraph{
+	margin: 1.6rem auto;
+	font-size:1.2rem;
+	line-height: 1.8;
+	width: 100%;
+}
+.quality-innner{
+    box-sizing: border-box;
+    width : calc(100% - 50px) ;
+	padding: 20px 30px;
+	
+}
+/*--------------------
+ *
+ * よくある質問
+ *
+ *--------------------*/
+.faq-section{
+	background-color: #f3dddd;
+	padding: 40px 50px 70px;
+}
+
+.question-contents{
+	display: flex;
+	align-items: flex-start;
+	padding: 14px 0 14px 20px;
+}
+.q-icon{
+	margin-right: 15px;
+}
+
+.question-subhead{
+	width: 780px;
+	font-size: 1.6rem;
+	margin-top: 10px;
+	border-bottom: dotted 5px #f9a7a7;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.answer-subhead{
+	display: flex;
+	align-items: flex-start;
+	padding: 14px 0 14px 20px;
+}
+
+.a-icon{
+	margin-right: 14px;
+}
+
+.answer-sub-text{
+	font-size: 1.6rem;
+	margin-top: 12px;
+}
+
+.faq-text{
+	font-size: 0.8em;
+	display: flex;
+	align-items: flex-start;
+	padding-left: 82px;
+	line-height: 1.5;
+}
+.faq-white{
+	background-color: #fff;
+	padding: 15px 34px 40px 10px;
+}
+
+.white-1{
+	margin-bottom: 40px;
+}
+	
+}
